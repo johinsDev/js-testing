@@ -9,7 +9,7 @@
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
     "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
-    "precommit": "npm run validate"
+    "precommit": "lint-staged && npm run flow"
   },
   "keywords": [],
   "author": "johinsdev",
@@ -20,6 +20,7 @@
     "eslint-config-prettier": "^6.0.0",
     "flow-bin": "^0.105.2",
     "husky": "^3.0.3",
+    "lint-staged": "^9.2.1",
     "prettier": "^1.18.2"
   }
 }
